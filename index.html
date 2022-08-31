@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
+    <!-- inserted the google icons link for search magnifying glass and the apps icon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,6 +14,7 @@
 <body>
 
     <!-- creating a header  -->
+    <!-- organize body into 3 separate parts(header, section, footer) -->
     <header>
         <nav>
             <ul id="header-left">
@@ -25,11 +27,14 @@
                 <a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a>
                 <a href="https://www.google.ca/imghp?hl=en&ogbl">Images</a>
                 <a><i class="material-icons">apps</i></a>
-                <button>Sign in</button>
+                <!-- added an anchor tag inside of a button -->
+                <button><a
+                        href="https://accounts.google.com/ServiceLogin/webreauth?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+                        Sign in</a></button>
             </ul>
         </nav>
     </header>
-
+    <!-- added spans around each letter to customize Google's infamous multicolor name -->
     <section>
         <h1><span style="color:rgb(0, 183, 255)">G</span style="color:rgb(0, 183, 255)"><span
                 style="color:rgb(255, 0, 0)">O</span><span style="color:rgb(251, 255, 0)">O</span><span

@@ -1,3 +1,5 @@
+/* creating our google font with this link */
+
 @font-face {
     font-family: 'Product Sans';
     font-style: normal;
@@ -5,22 +7,26 @@
     src: url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
 }
 
+/* get rid of the margins/ use open sans make the font-size 0.9 times its actual size */
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     font-size: 0.9em;
 }
 
+/* get rid of the default underline decoration on anchor tags */
 a {
     margin: 5px 5px;
     text-decoration: none;
     color: black;
 }
 
+/* add underline decoration when the user hovers */
 a:hover {
     text-decoration: underline;
 }
 
+/* start by using flexbox(grow space to fit items or shrink them) */
 nav {
     display: flex;
     justify-content: space-between;
@@ -132,14 +138,17 @@ footer {
     align-items: center;
 }
 
-/* Media queries */
+/* Media queries to prevent overlap and make page responsive */
+/* if width is less than 360px do this... */
 
 @media (max-width: 630px) {
 
+    /* set the nav elements to be column */
     #footer-nav {
         flex-direction: column;
     }
 
+    /* we wanna change the justify-content to center then theyll turn to columns and stack on top of each other*/
     #footer-left {
         justify-content: center;
     }
@@ -148,6 +157,7 @@ footer {
         justify-content: center;
     }
 
+    /* set the input to be 95% of the view window */
     #my-container {
         width: 95vw;
     }
@@ -155,13 +165,15 @@ footer {
 
 }
 
-
+/* do this if the height is less than 522px */
 @media (max-height: 522px) {
 
+    /* default shows a scroll bar so we set it to hidden */
     body {
         overflow-x: hidden;
     }
 
+    /* change our body from position to relative */
     section {
         margin-bottom: 20px;
 
@@ -172,6 +184,8 @@ footer {
     }
 }
 
+/* do this if the max-h is less than 570 and max-w
+ less then 630 */
 
 @media (max-height: 570px) and (max-width: 630px) {
 
