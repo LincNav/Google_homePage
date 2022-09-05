@@ -139,7 +139,7 @@ footer {
 }
 
 /* Media queries to prevent overlap and make page responsive */
-/* if width is less than 360px do this... */
+/* if width is less than 630gitpx do this... */
 
 @media (max-width: 630px) {
 
